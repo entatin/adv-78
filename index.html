@@ -1,0 +1,35 @@
+<html>
+    <head><title>Project-78</title></head>
+    <body>
+        <h1>Sesame Street Family</h1>
+        <img id="family_member_image"src="https://www.ajc.com/resizer/zYTQYHT2XnI5vWQDoq2Vk-BISgo=/814x458/cloudfront-us-east-1.images.arcpublishing.com/ajc/QVETBNV7URQ57EVFXRFFH5W3LE.jpg">
+        <h3>Elmo's Family!!!</h3>
+        <h2 id="family_member_name"></h2>
+        <button onclick="update();">Next</button>
+        
+        <script>
+            var images=["https://blog.graphos.ca/hs-fs/hubfs/Blog_photos/ElmotheMarketer.jpg?width=750&height=375&name=ElmotheMarketer.jpg","https://www.nicepng.com/png/full/310-3104754_sesame-street-live-will-be-coming-to-our.png","https://i.pinimg.com/originals/d0/63/a3/d063a3990c8c12fe618338ebd6a6a9fb.jpg","https://static.timesofisrael.com/www/uploads/2014/04/AP101123151546-e1397037031263-640x400.jpg","https://d3bzyjrsc4233l.cloudfront.net/news/oscar_main.png"];
+            
+            var names=["Elmo","Abby","Grover","Cookie Monster","Oscar The Grouch"];
+
+
+            var i=0;
+            function update()
+            {
+                i++;
+                var numbers_of_family_member_in_array = 4
+                if(i>numbers_of_family_member_in_array)
+                {i=0;}
+                var updatedImage=images[i];
+                var names_of_family_members_in_array = 4
+                if(i>names_of_family_members_in_array)
+                {i=0;}
+            var updatedName=names[i];
+            document.getElementById("family_member_image").src=updatedImage;
+            document.getElementById("family_member_name").innerHTML=updatedName;
+        }
+        
+   
+        </script>
+    </body>
+</html>
